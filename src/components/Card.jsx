@@ -10,22 +10,26 @@ const Card = () => {
     <div className='Cards'>
    
     {
+      
         data && data.map(item=>(
-            <div class="card" style={{width:"18rem"}}>
-            <img src={item.Poster} alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title"><h3>{item.Title} </h3></h5>
-              <p class="card-text">   {item.Year}</p>
-                  <p>{item.Type}</p>
-              
-            </div>
-          </div>
+          
+        
+       <div class="card__body">
+        <div className='cart'>
+       <img src={item.Poster} alt="..."/>
+         <h3>{item.Title} </h3>
+         <p> {item.Year}</p>
+            
+         </div>
+         
+       </div>
+   
+    
           
         ))
     }
+</div>
 
-
-    </div>
   )
 }
 
